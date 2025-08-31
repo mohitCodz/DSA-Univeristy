@@ -1,4 +1,4 @@
-// adding two values by using
+// adding two values by using pointers
 #include <stdio.h>
 int main() {
   int a = 101;
