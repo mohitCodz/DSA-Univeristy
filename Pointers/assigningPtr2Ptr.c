@@ -1,4 +1,4 @@
-// assigning one pointer to another
+// 
 #include <stdio.h>
 int main() {
   int a = 20;
