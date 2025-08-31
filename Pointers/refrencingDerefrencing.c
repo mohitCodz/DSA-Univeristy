@@ -1,4 +1,4 @@
-// refrencing and de refrencing
+// refrencing 
 #include <stdio.h>
 int main() {
     int a = 101;
