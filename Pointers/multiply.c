@@ -1,4 +1,4 @@
-// multiplying two values by using
+// multiplying two values by using pointers
 #include <stdio.h>
 int main() {
   int a = 4;
