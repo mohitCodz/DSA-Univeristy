@@ -1,4 +1,4 @@
-// dividing two values
+// dividing two values 
 #include <stdio.h>
 int main() {
   int a = 20;
