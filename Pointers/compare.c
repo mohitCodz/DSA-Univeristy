@@ -1,4 +1,4 @@
-// comparing two pointer variable
+// comparing two pointer variables
 
 #include "stdio.h"
 int main()
