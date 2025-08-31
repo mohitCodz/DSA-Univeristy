@@ -1,4 +1,4 @@
-// adding the pointer
+// adding 
 #include <stdio.h>
 int main() {
   int a = 101;
