@@ -1,4 +1,4 @@
-// multiplying the pointer
+// 
 #include <stdio.h>
 int main() {
   int a = 4;
