@@ -1,4 +1,4 @@
-// multiplying two values
+// multiplying two values by using
 #include <stdio.h>
 int main() {
   int a = 4;
