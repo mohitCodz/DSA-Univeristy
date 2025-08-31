@@ -1,4 +1,4 @@
-// adding two values
+// adding two values by
 #include <stdio.h>
 int main() {
   int a = 101;
