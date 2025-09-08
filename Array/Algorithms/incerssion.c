@@ -1,4 +1,4 @@
-// insertion 
+// insertion - adding element at the last
 #include "stdio.h"
 int main(){
     int n;
