@@ -1,47 +1,44 @@
 // insertion - adding element at the last
-#include "stdio.h"
-int main(){
+#include <stdio.h>
+int main() {
     int n;
-    printf("Enter the number of elements: "); // asking for number of elements
+    printf("Enter the number of elements: ");
     scanf("%d", &n);
 
-    int arr[n]; // array
+    int arr[n+1]; // allocate extra space for insertion
 
-    printf("Enter %d elements:\n", n); // taking element input
+    // taking input
+    printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
+    // displaying the array
     printf("Created array:\n");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n");
 
-    // Ask for position to delete
     int position, element;
-    printf("Enter the position (0 to %d) of element to delete: ", n - 1);
+    printf("Enter the position (0 to %d) where you want to insert new element: ", n);
     scanf("%d", &position);
 
-    // asking for the element to add
-    printf("Enter the element you want to insert");
-    scanf("%d",&element);
+    printf("Enter the element you want to insert: ");
+    scanf("%d", &element);
 
-    if (position < 0 || position >= n) {
+    if (position < 0 || position > n) {
         printf("Invalid position!\n");
     } else {
-        // adding the element 
-        int i = n;
-        while (i >position) {
-            arr[i] = arr[i - 1]; // shift each element to the right
-            i--;
+        // shift elements to the right
+        for (int i = n; i > position; i--) {
+            arr[i] = arr[i - 1];
         }
+        arr[position] = element; // insert element
 
-        printf("Array after deletion:\n");
-        int j = 0;
-        while (j < n) {
-            printf("%d ", arr[j]);
-            j++;
+        printf("Array after insertion:\n");
+        for (int i = 0; i <= n; i++) {
+            printf("%d ", arr[i]);
         }
         printf("\n");
     }
