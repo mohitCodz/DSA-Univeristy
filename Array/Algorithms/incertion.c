@@ -30,11 +30,11 @@ int main() {
     } else {
         // Shift elements left using while loop
         int i = position;
-        while (i < n - 1) {
+        while (i < n + 1) {
             arr[i] = arr[i + 1];
             i++;
         }
-        n--; // reducing size
+        n++; // reducing size
 
         printf("Array after deletion:\n");
         int j = 0;
