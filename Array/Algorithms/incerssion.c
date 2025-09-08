@@ -19,20 +19,23 @@ int main(){
     printf("\n");
 
     // Ask for position to delete
-    int position;
+    int position, element;
     printf("Enter the position (0 to %d) of element to delete: ", n - 1);
     scanf("%d", &position);
+
+    // asking for the element to add
+    printf("Enter the element you want to insert");
+    scanf("%d",&element);
 
     if (position < 0 || position >= n) {
         printf("Invalid position!\n");
     } else {
-        // Shift elements left using while loop
-        int i = position;
-        while (i < n - 1) {
-            arr[i] = arr[i + 1];
-            i++;
+        // adding the element 
+        int i = n;
+        while (i >position) {
+            arr[i] = arr[i - 1]; // shift each element to the right
+            i--;
         }
-        n--; // reducing size
 
         printf("Array after deletion:\n");
         int j = 0;
