@@ -1,4 +1,4 @@
-//
+// Binary Search
 #include "stdio.h"
 int main(){
     int loc = -1, target, beg = 0, last = 9, mid;
